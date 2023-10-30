@@ -1,0 +1,32 @@
+otpional : msconfig => boot => advanced options => 2
+
+desactivate Nvidia GPU
+refresh rate : 60hz Fn + R
+Quiet mode : Fn + G / blue color
+Bluetooth desactivate
+brighness : 25%
+Battery saver mode
+use built in windows software : edge, windows player,..
+
+
+To go back to normal :
+charging mode
+Fn + R
+Fn + Q
+vantage : dGPU
+brightness
+activate bluetooth
+
+
+
+
+#10/09/2023
+safe mode
+uninstall geforce exp
+force igpu on nvidia control panel and windows thing
+reinstall amd driver
+
+test boot with 2 cores
+test boot with 10% cpu power
+
+https://www.reddit.com/r/LenovoLegion/comments/152v7ob/hybridauto_mode_sometimes_halves_battery_life/
