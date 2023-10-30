@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-import torch
+#import torch
 from tqdm.notebook import tqdm
 from llama_index.embeddings import InstructorEmbedding
 from llama_index import ServiceContext, set_global_service_context
@@ -11,7 +11,7 @@ import os
 @st.cache_resource
 def load_emb_model():
     os.environ["OPENAI_API_KEY"] = "NOOPE"
-    os.environ["OPENAI_API_BASE"] = "http://172.19.208.1:1300/v1"
+    os.environ["OPENAI_API_BASE"] = "http://localhost:1234/v1"
 
     embed_model_inst = InstructorEmbedding(model_name="hkunlp/instructor-large")
     service_context = ServiceContext.from_defaults(embed_model=embed_model_inst)
@@ -50,4 +50,3 @@ if __name__ == '__main__':
     with st.sidebar:
         create_sidebar()
     create_main_content(query_engine)
-    #st.run()

@@ -1,0 +1,11 @@
+streamlit
+numpy
+pandas
+seaborn
+plotly
+ipykernel
+jupyterlab
+jupyter
+tqdm
+llama-index
+InstructorEmbedding
