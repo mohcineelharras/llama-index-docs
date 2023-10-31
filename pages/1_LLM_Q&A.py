@@ -8,8 +8,8 @@ from llama_index import ServiceContext, set_global_service_context
 from llama_index import VectorStoreIndex, SimpleDirectoryReader
 import os
 
-#os.environ["OPENAI_API_KEY"] = "NOOPE"
-#os.environ["OPENAI_API_BASE"] = "http://172.19.208.1:1300/v1"
+os.environ["OPENAI_API_KEY"] = "NOOPE"
+os.environ["OPENAI_API_BASE"] = "http://localhost:1300/v1"
 
 
 @st.cache_resource
@@ -26,11 +26,13 @@ query_engine = load_emb_model()
 
 
 with st.sidebar:
-    api_server_info = st.text_input("Local LLM API server", "http://172.19.208.1:1300/v1",key="openai_api_base")
+    api_server_info = st.text_input("Local LLM API server", os.environ["OPENAI_API_BASE"],key="openai_api_base")
     st.title("🤖 Llama Index 📚")
     st.write("🚀 This page allows you to chat with local documents using LLama_index")
+    st.write("This app is developed and maintained by **@mohcineelharras**")
     
-st.title("💬 LLM RAG QA")
+    
+st.title("💬 LLM RAG QA with database")
 prompt = st.text_area("Ask your question here")
 if prompt:
     response = query_engine.query(prompt)

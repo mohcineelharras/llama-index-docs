@@ -9,3 +9,4 @@ jupyter
 tqdm
 llama-index
 InstructorEmbedding
+pypdf

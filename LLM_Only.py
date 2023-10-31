@@ -4,10 +4,14 @@ import numpy as np
 #import torch
 from langchain.llms import OpenAI
 import os
-    
+
+os.environ['no_proxy'] = 'localhost,127.0.0.1' 
+os.environ["OPENAI_API_KEY"] = "NOOPE"
+os.environ["OPENAI_API_BASE"] = "http://localhost:1300/v1"
+
 
 with st.sidebar:
-    api_server_info = st.text_input("Local LLM API server", "http://172.19.208.1:1300/v1",key="openai_api_base")
+    api_server_info = st.text_input("Local LLM API server", os.environ["OPENAI_API_BASE"],key="openai_api_base")
     st.title("🤖 Llama Index 📚")
     st.write("🚀 This app allows you to chat with LLM using LM STUDIO")
     st.subheader("💻 System Requirements: ")
@@ -15,7 +19,7 @@ with st.sidebar:
     st.markdown("- RAM: 8 GB or higher")
     st.markdown("- GPU: optional but very useful for Cuda acceleration")
     st.subheader("🔑 Developer Information:")
-    st.write("This app is developed and maintained by @mohcineelharras")    
+    st.write("This app is developed and maintained by **@mohcineelharras**")
     
     
 
@@ -28,7 +32,6 @@ if prompt:
     temperature = 0.2,
     openai_api_base = api_server_info,
     max_tokens = 100,
-    #...any other options, read the langchain docs for more information if required
     )
 
     response = llm(prompt=prompt)
