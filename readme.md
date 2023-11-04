@@ -1,4 +1,4 @@
- # Welcome to LLM App!
+ # Exploring llama_index QA with Database
 
 This is a beautiful application that utilizes local Open Source LLMs for different tasks, such as text generation, database interaction, and document uploading. The app has three tabs to make it more efficient and user-friendly:
 
