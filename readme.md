@@ -1,8 +1,6 @@
-# Welcome to this LLM App !
+ # Welcome to LLM App!
 
-My main goal was to test llama_index to chat with documents database
-
-This is an application that utilizes Local Open Source LLMs for different tasks, such as text generation, database interaction, and document uploading. The app has three tabs to make it more efficient and user-friendly:
+This is a beautiful application that utilizes local Open Source LLMs for different tasks, such as text generation, database interaction, and document uploading. The app has three tabs to make it more efficient and user-friendly:
 
 1. **LLM_Only** - This tab allows you to request from an installed local LLM API server like LM Studio or any other compatible server. It provides basic functionality for text generation using the selected language model.
 
@@ -56,3 +54,9 @@ Now that everything is set up, you can use the three tabs in the application to 
 Don't forget to replace the `OPENAI_API_KEY` and `OPENAI_API_BASE` environment variables with your actual API credentials and server URL.
 
 Happy experimenting! 💡👾
+
+#### Screenshots:
+
+![LLM Only Tab](LLM_ONLY.png)
+![LLM Q&A Tab](LLM_RAG_DATABASE.png)
+![Upload File and Q&A Tab](Upload_File_QA.png)
