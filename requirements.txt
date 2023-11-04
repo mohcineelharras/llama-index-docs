@@ -10,3 +10,7 @@ tqdm
 llama-index
 InstructorEmbedding
 pypdf
+langchain
+transformers
+huggingface
+sentence-transformers

@@ -9,7 +9,7 @@ from llama_index import VectorStoreIndex, SimpleDirectoryReader
 import os
 
 os.environ["OPENAI_API_KEY"] = "NOOPE"
-os.environ["OPENAI_API_BASE"] = "http://172.19.208.1:1300/v1v1"
+os.environ["OPENAI_API_BASE"] = "http://172.19.208.1:1300/v1"
 
 
 @st.cache_resource
