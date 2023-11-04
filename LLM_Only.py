@@ -7,7 +7,7 @@ import os
 
 os.environ['no_proxy'] = 'localhost,127.0.0.1' 
 os.environ["OPENAI_API_KEY"] = "NOOPE"
-os.environ["OPENAI_API_BASE"] = "http://localhost:1300/v1"
+os.environ["OPENAI_API_BASE"] = "http://172.19.208.1:1300/v1"
 
 
 with st.sidebar:
