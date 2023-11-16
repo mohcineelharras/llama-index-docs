@@ -1,6 +1,6 @@
  # Exploring llama_index QA with Database
 
-This is a beautiful application that utilizes local Open Source LLMs for different tasks, such as text generation, database interaction, and document uploading. The app has three tabs to make it more efficient and user-friendly:
+This is an application that utilizes local Open Source LLMs for different tasks, such as text generation, database interaction, and document uploading. The app has three tabs to make it more efficient and user-friendly:
 
 1. **LLM_Only** - This tab allows you to request from an installed local LLM API server like LM Studio or any other compatible server. It provides basic functionality for text generation using the selected language model.
 
