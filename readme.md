@@ -58,9 +58,9 @@ Enjoy exploring the power of LLMs! 💡👾
 
 #### Screenshots:
 
-![LLM Only Tab](LLM_ONLY.png)
-![LLM Q&A Tab](LLM_RAG_DATABASE.png)
-![Upload File and Q&A Tab](Upload_File_QA.png)
+![LLM Only Tab](ressources/LLM_ONLY.png)
+![LLM Q&A Tab](ressources/LLM_RAG_DATABASE.png)
+![Upload File and Q&A Tab](ressources/Upload_File_QA.png)
 
 
 
